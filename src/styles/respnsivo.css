@@ -1,0 +1,53 @@
+@media (min-width: 1024px) {
+
+    .heard {
+        background: url('../assets/images/pattern-bg-desktop.png');
+        width: 100%;
+    }
+
+    .heard  h1{
+        font-size: 2em;
+    }
+    
+    input[type="text"] {
+        width: 40%;
+    }
+
+    input[type="text"]::placeholder {
+        color: #969696;
+        font-size: 16px;
+    }
+
+    .info-ip {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .content-infos {
+        padding: 0px 0px;
+        height: 100px;
+    
+    }
+
+    .content-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 12px 0px;
+    
+    }
+
+    div.linhas {
+        display: inline-block;
+        border: 1px solid #9696965b;
+        height: 70%;
+    }
+
+    .starlink, .brooklyn {
+        width: 170px;
+    }
+    
+    #map {
+        height: 420px;
+    }
+}

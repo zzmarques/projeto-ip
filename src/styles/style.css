@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.heard {
+    background: url('../assets/images/pattern-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heard  h1{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: 30px 0px;
+}
+
+.ips {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+input[type="text"] {
+    height: 50px;
+    width: 80%;
+    border: none;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    padding-left: 28px;
+    cursor: pointer;
+}
+        
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="text"]::placeholder {
+    color: #969696;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    padding: 16px 26px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+        
+.btn::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); 
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .btn:hover::after {
+    opacity: 0.5; 
+  }
+
+
+.info-ip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 89%;
+    position: relative; 
+    z-index: 1;
+    padding: 14px 0px;
+    background: white;
+    border-radius: 13px;
+}
+
+.content-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0px;
+
+}
+
+.content-infos .sla {
+    color: #969696;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.content-infos .destaque {
+    color: #2b2b2b;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+div.linhas {
+    display: none;
+}
+
+#map {
+    position: relative;
+    z-index: 0;
+    height: 437px;
+}
